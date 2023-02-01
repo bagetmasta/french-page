@@ -3,12 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>French page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Poppins:wght@300;400;500;600&family=Readex+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <img class="nav__logo" src="./images/logo-aie.svg" alt="logo" />
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">Nous découvrir</a></li>
+            <li class="nav__item"><a href="#">Nos activités</a></li>
+            <li class="nav__item"><a href="#">Nos actualités</a></li>
+            <li class="nav__item"><a href="#">Nos adresses</a></li>
+            <li class="nav__item"><a href="#">Postuler</a></li>
+            <li class="nav__item">
+              <a href="tel:0596763818">0596 76 38 18</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="testimonials">
+        <h1>Testimonials</h1>
+        <p>Excepteur sint occaecat cupidatat non proident</p>
+        <ul>
+          <li>
+            <p>
+              Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum
+              nulla sed consectetur.
+            </p>
+            <h2>Dianne Russell</h2>
+            <p>Marketing Coordinator</p>
+          </li>
+          <li>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium.
+            </p>
+            <h2>Robert Johnson</h2>
+            <p>Graphic Designer</p>
+          </li>
+          <li>
+            <p>
+              Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
+              risus, porta ac consectetur ac, vestibulum at eros.
+            </p>
+            <h2>Floyd Miles</h2>
+            <p>President of Sales</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="faq">
+        <h3>Frequently Asked Question</h3>
+        <p>Excepteur sint occaecat cupidatat non proident</p>
+        <ul>
+          <li>
+            <h4>Sed ut perspiciatis unde omnis iste natus ?</h4>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque.
+            </p>
+          </li>
+          <li>
+            <h4>Sed ut perspiciatis unde omnis iste natus ?</h4>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque.
+            </p>
+          </li>
+          <li>
+            <h4>Sed ut perspiciatis unde omnis iste natus ?</h4>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="call-to-action">
+        <h3 class="call-to-action__header">
+          Grow Your Company Faster Than Ever Before
+        </h3>
+        <button type="button" class="call-to-action__button">Contact Us</button>
+      </section>
+
+      <section class="contact-form">
+        <form autocomplete="off">
+          <h3>Contact Us</h3>
+          <input
+            type="text"
+            placeholder="First Name"
+            pattern="[A-Za-z]{1,32}"
+            required
+            title="The username must consist of letters without numbers."
+            minlength="3"
+          />
+          <input
+            type="text"
+            placeholder="Last Name"
+            pattern="[A-Za-z]{1,32}"
+            required
+            title="The username must consist of letters without numbers."
+            minlength="3"
+          />
+          <input type="text" placeholder="Email" required minlength="3" />
+          <input type="text" placeholder="Company name (optional)" />
+          <input type="text" placeholder="Enqiry" />
+          <label for="policy" class="modal__policy">
+            <input type="checkbox" class="" name="policy" id="policy" />
+            <span class=""
+              >I agree to the <a href="" class="">Terms of Use </a>and
+              <a href="">Privacy Policy</a></span
+            >
+          </label>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>

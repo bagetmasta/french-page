@@ -1,0 +1,29 @@
+.nav__logo {
+  width: 70px;
+  height: 92px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav__item {
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: #e75624;
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.nav__list {
+  display: flex;
+  margin-left: auto;
+}

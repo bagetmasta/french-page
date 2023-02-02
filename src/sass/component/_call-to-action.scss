@@ -1,6 +1,6 @@
 .call-to-action {
-  padding: 135.5px 0px;
-  margin: auto;
+  padding: 130.5px 0px;
+  margin-bottom: 118.45px;
   text-align: center;
 
   background-image: $linear-gradient, url('../images/call-to-action.jpg');
@@ -38,4 +38,15 @@
   background: #ffffff;
   border-radius: 15px;
   border: 0;
+
+  cursor: pointer;
+
+  transition-property: box-shadow;
+  transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 0 10px 5px rgb(0 0 0 / 30%);
+  }
 }

@@ -3,3 +3,6 @@ $linear-gradient: linear-gradient(
   rgba(255, 104, 1, 0.8) 0.72%,
   rgba(255, 32, 1, 0.8) 99.25%
 );
+
+$transition-duration: 250ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);

@@ -1,0 +1,38 @@
+.menu-button {
+  @media screen and (max-width: 479.98px) {
+    top: 5px;
+  }
+
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  fill: #ff6800;
+
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 5;
+  cursor: pointer;
+
+  & .icon-cross {
+    display: none;
+  }
+
+  &.is-open .icon-cross {
+    display: block;
+  }
+
+  &.is-open .icon-burger {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button__svg {
+  transition: fill $transition-duration $timing-function;
+}

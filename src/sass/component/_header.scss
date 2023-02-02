@@ -1,9 +1,16 @@
 .nav__logo {
   width: 70px;
   height: 92px;
+  margin-left: 50px;
+
+  @media screen and (max-width: 479.98px) {
+    width: 30px;
+    height: 40px;
+  }
 }
 
 .nav {
+  position: relative;
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -24,6 +31,40 @@
 }
 
 .nav__list {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+
   display: flex;
   margin-left: auto;
+}
+
+
+.nav__phone {
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #ffffff;
+
+  margin-left: auto;
+  padding: 13px 20px;
+
+  background: #e75624;
+
+  border: 1px solid #e75624;
+  border-radius: 100px;
+
+  @media screen and (max-width: 479.98px) {
+    border-radius: 100px 0px 0px 100px;
+  }
+}
+
+.container--padding-cancel {
+  @media screen and (max-width: 479.98px) {
+    padding-right: 0px;
+    padding-top: 8px;
+  }
 }

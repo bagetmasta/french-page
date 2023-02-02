@@ -11,23 +11,49 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    
   </head>
-  <body>
+  <body data-body>
     <header>
-      <div class="container">
+      <div class="container container--padding-cancel">
         <nav class="nav">
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              class="menu-button__svg"
+              width="40"
+              height="40"
+              aria-label="Переключательно мобильного меню"
+            >
+              <use
+                class="icon-cross"
+                href="./images/mobile_menu.svg#icon-cross_menu"
+              ></use>
+              <use
+                class="icon-burger"
+                href="./images/mobile_menu.svg#icon-burger_menu"
+              ></use>
+            </svg>
+          </button>
+
+          <div data-menu>
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#">Nous découvrir</a></li>
+              <li class="nav__item"><a href="#">Nos activités</a></li>
+              <li class="nav__item"><a href="#">Nos actualités</a></li>
+              <li class="nav__item"><a href="#">Nos adresses</a></li>
+              <li class="nav__item"><a href="#">Postuler</a></li>
+            </ul>
+          </div>
+
           <img class="nav__logo" src="./images/logo-aie.svg" alt="logo" />
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#">Nous découvrir</a></li>
-            <li class="nav__item"><a href="#">Nos activités</a></li>
-            <li class="nav__item"><a href="#">Nos actualités</a></li>
-            <li class="nav__item"><a href="#">Nos adresses</a></li>
-            <li class="nav__item"><a href="#">Postuler</a></li>
-            <li class="nav__item">
-              <a href="tel:0596763818">0596 76 38 18</a>
-            </li>
-          </ul>
+
+          <a class="nav__phone" href="tel:0596763818">0596 76 38 18</a>
         </nav>
       </div>
     </header>
@@ -96,41 +122,149 @@
         <h3 class="call-to-action__header">
           Grow Your Company Faster Than Ever Before
         </h3>
-        <button type="button" class="call-to-action__button">Contact Us</button>
+        <button type="button" class="call-to-action__button" data-modal-open>Contact Us</button>
+
+        <div class="backdrop is-hidden" data-modal>
+          <div class="section-form">
+            <div class="container">
+              <form autocomplete="off" class="section-form__form">
+                <h3 class="section-form__header">Contact Us</h3>
+                <div class="section-form__container">
+                  <div class="section-form__both-of-names">
+                    <input
+                      class="section-form__input section-form__input--first-name"
+                      type="text"
+                      placeholder="First Name"
+                      pattern="[A-Za-z]{1,32}"
+                      required
+                      title="The username must consist of letters without numbers."
+                      minlength="3"
+                    />
+                    <input
+                      class="section-form__input section-form__input--last-name"
+                      type="text"
+                      placeholder="Last Name"
+                      pattern="[A-Za-z]{1,32}"
+                      required
+                      title="The username must consist of letters without numbers."
+                      minlength="3"
+                    />
+                  </div>
+                  <input
+                    class="section-form__input section-form__input--email"
+                    type="text"
+                    placeholder="Email"
+                    required
+                    minlength="3"
+                  />
+                  <input
+                    class="section-form__input section-form__input--company-name"
+                    type="text"
+                    placeholder="Company name (optional)"
+                  />
+                  <input
+                    class="section-form__input section-form__input--enqiry"
+                    type="text"
+                    placeholder="Enqiry"
+                  />
+                  <input
+                    type="checkbox"
+                    class="section-form__input section-form__input--сheckbox"
+                    name="policy"
+                    id="policy"
+                  />
+                  <label for="policy" class="section-form__policy">
+                    <span class="checkbox"
+                      >I agree to the
+                      <a href="#" class="checkbox__terms">Terms of Use </a>and
+                      <a href="#" class="checkbox__terms"
+                        >Privacy Policy</a
+                      ></span
+                    >
+                  </label>
+                  <button type="submit" class="section-form__button" data-send-close>
+                    Send
+                  </button>
+                  <img
+                    class="section-form__button-close"
+                    src="./images/close-btn.png"
+                    alt="Close button"
+                    data-modal-close
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="contact-form">
-        <form autocomplete="off">
-          <h3>Contact Us</h3>
-          <input
-            type="text"
-            placeholder="First Name"
-            pattern="[A-Za-z]{1,32}"
-            required
-            title="The username must consist of letters without numbers."
-            minlength="3"
-          />
-          <input
-            type="text"
-            placeholder="Last Name"
-            pattern="[A-Za-z]{1,32}"
-            required
-            title="The username must consist of letters without numbers."
-            minlength="3"
-          />
-          <input type="text" placeholder="Email" required minlength="3" />
-          <input type="text" placeholder="Company name (optional)" />
-          <input type="text" placeholder="Enqiry" />
-          <label for="policy" class="modal__policy">
-            <input type="checkbox" class="" name="policy" id="policy" />
-            <span class=""
-              >I agree to the <a href="" class="">Terms of Use </a>and
-              <a href="">Privacy Policy</a></span
-            >
-          </label>
-          <button type="submit">Send</button>
-        </form>
-      </section>
+      <!-- <section class="section-form">
+        <div class="container">
+          <form autocomplete="off" class="section-form__form">
+            <h3 class="section-form__header">Contact Us</h3>
+            <div class="section-form__container">
+              <div class="section-form__both-of-names">
+                <input
+                  class="section-form__input section-form__input--first-name"
+                  type="text"
+                  placeholder="First Name"
+                  pattern="[A-Za-z]{1,32}"
+                  required
+                  title="The username must consist of letters without numbers."
+                  minlength="3"
+                />
+                <input
+                  class="section-form__input section-form__input--last-name"
+                  type="text"
+                  placeholder="Last Name"
+                  pattern="[A-Za-z]{1,32}"
+                  required
+                  title="The username must consist of letters without numbers."
+                  minlength="3"
+                />
+              </div>
+              <input
+                class="section-form__input section-form__input--email"
+                type="text"
+                placeholder="Email"
+                required
+                minlength="3"
+              />
+              <input
+                class="section-form__input section-form__input--company-name"
+                type="text"
+                placeholder="Company name (optional)"
+              />
+              <input
+                class="section-form__input section-form__input--enqiry"
+                type="text"
+                placeholder="Enqiry"
+              />
+              <input
+                type="checkbox"
+                class="section-form__input section-form__input--сheckbox"
+                name="policy"
+                id="policy"
+              />
+              <label for="policy" class="section-form__policy">
+                <span class="checkbox"
+                  >I agree to the
+                  <a href="#" class="checkbox__terms">Terms of Use </a>and
+                  <a href="#" class="checkbox__terms">Privacy Policy</a></span
+                >
+              </label>
+              <button type="submit" class="section-form__button">Send</button>
+              <img
+                class="section-form__button-close"
+                src="./images/close-btn.png"
+                alt=""
+              />
+            </div>
+          </form>
+        </div>
+      </section> -->
     </main>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

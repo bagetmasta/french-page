@@ -1,11 +1,14 @@
 .nav__logo {
   width: 70px;
   height: 92px;
-  margin-left: 50px;
 
   @media screen and (max-width: 479.98px) {
     width: 30px;
     height: 40px;
+  }
+
+  @media screen and (max-width: 1023.98px) {
+    margin-left: 50px;
   }
 }
 
@@ -25,46 +28,146 @@
 
   color: #e75624;
 
-  &:not(:last-child) {
-    margin-right: 40px;
+  transition: color $transition-duration $timing-function;
+
+  @media screen and (max-width: 1023.98px) {
+    font-size: 20px;
+    line-height: 1.25;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
   }
+
+  @media screen and (min-width: 1024px) {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}
+
+.nav__item:hover,
+.nav__item:focus {
+  color: #a8360ff0;
 }
 
 .nav__list {
-  @media screen and (max-width: 767.98px) {
-    display: none;
-  }
-
   display: flex;
-  margin-left: auto;
+  padding: 40px 41px 40px 45px;
+
+  @media screen and (max-width: 1023.98px) {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
+.nav__item--secondary-menu:hover .nav__list--activites,
+.nav__item--secondary-menu:focus .nav__list--activites {
+  display: block;
+}
 
-.nav__phone {
+.nav__item--secondary-menu:hover .nav__item__link,
+.nav__item--secondary-menu:focus .nav__item__link {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.nav__list--activites {
   font-family: 'Readex Pro';
-  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+
+  color: #252525;
+  display: none;
+}
+
+.nav__list--item-activites:hover,
+.nav__list--item-activites:focus {
+  text-decoration: underline;
+}
+
+.nav__list--item-activites {
+  float: left;
+  clear: left;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.nav__phone,
+.mobile-container__phone {
+  font-family: 'Readex Pro';
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
 
   color: #ffffff;
-
-  margin-left: auto;
-  padding: 13px 20px;
-
   background: #e75624;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #e75624;
   border-radius: 100px;
+}
+
+.nav__phone:hover,
+.mobile-container__phone:hover,
+.nav__phone:focus,
+.mobile-container__phone:focus {
+  transform: scale(1.1);
+}
+
+.nav__phone {
+  width: 171px;
+  height: 46px;
+  font-size: 16px;
+  line-height: 1.22;
+  margin-left: auto;
 
   @media screen and (max-width: 479.98px) {
+    width: 154.41px;
+    height: 42px;
+    font-size: 18px;
+
     border-radius: 100px 0px 0px 100px;
   }
 }
 
+.mobile-container__phone::before,
+.nav__phone::before {
+  content: '';
+  background-image: url(../images/phone.svg);
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 7px;
+  display: inline-block;
+}
+
+.mobile-container__phone {
+  width: 227px;
+  height: 58px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.25;
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
 .container--padding-cancel {
-  @media screen and (max-width: 479.98px) {
+  @media screen and (max-width: 767.98px) {
     padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  @media screen and (max-width: 479.98px) {
     padding-top: 8px;
   }
 }

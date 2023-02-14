@@ -11,7 +11,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
-    
   </head>
   <body data-body>
     <header>
@@ -41,18 +40,41 @@
             </svg>
           </button>
 
-          <div data-menu>
-            <ul class="nav__list">
+          <img class="nav__logo" src="./images/logo-aie.svg" alt="logo" />
+
+          <div class="mobile-container" id="mobile-container" data-menu>
+            <ul class="nav__list container">
               <li class="nav__item"><a href="#">Nous découvrir</a></li>
-              <li class="nav__item"><a href="#">Nos activités</a></li>
+              <li class="nav__item nav__item--secondary-menu">
+                <a class="nav__item__link" href="#">Nos activités</a>
+                <ul class="nav__list--activites">
+                  <li class="nav__list--item-activites">
+                    <a href="#">Ressourceries</a>
+                  </li>
+                  <li class="nav__list--item-activites">
+                    <a href="#">Borne de collecte</a>
+                  </li>
+                  <li class="nav__list--item-activites">
+                    <a href="#">Valorisation textile</a>
+                  </li>
+                  <li class="nav__list--item-activites">
+                    <a href="#">Nos BOUTIKS</a>
+                  </li>
+                  <li class="nav__list--item-activites">
+                    <a href="#">Nos formations</a>
+                  </li>
+                </ul>
+              </li>
               <li class="nav__item"><a href="#">Nos actualités</a></li>
               <li class="nav__item"><a href="#">Nos adresses</a></li>
               <li class="nav__item"><a href="#">Postuler</a></li>
+              <li class="nav__item">
+                <a class="mobile-container__phone" href="tel:0596763818"
+                  >0596 76 38 18</a
+                >
+              </li>
             </ul>
           </div>
-
-          <img class="nav__logo" src="./images/logo-aie.svg" alt="logo" />
-
           <a class="nav__phone" href="tel:0596763818">0596 76 38 18</a>
         </nav>
       </div>
@@ -122,7 +144,9 @@
         <h3 class="call-to-action__header">
           Grow Your Company Faster Than Ever Before
         </h3>
-        <button type="button" class="call-to-action__button" data-modal-open>Contact Us</button>
+        <button type="button" class="call-to-action__button" data-modal-open>
+          Contact Us
+        </button>
 
         <div class="backdrop is-hidden" data-modal>
           <div class="section-form">
@@ -182,7 +206,11 @@
                       ></span
                     >
                   </label>
-                  <button type="submit" class="section-form__button" data-send-close>
+                  <button
+                    type="submit"
+                    class="section-form__button"
+                    data-send-close
+                  >
                     Send
                   </button>
                   <img
@@ -197,72 +225,6 @@
           </div>
         </div>
       </section>
-
-      <!-- <section class="section-form">
-        <div class="container">
-          <form autocomplete="off" class="section-form__form">
-            <h3 class="section-form__header">Contact Us</h3>
-            <div class="section-form__container">
-              <div class="section-form__both-of-names">
-                <input
-                  class="section-form__input section-form__input--first-name"
-                  type="text"
-                  placeholder="First Name"
-                  pattern="[A-Za-z]{1,32}"
-                  required
-                  title="The username must consist of letters without numbers."
-                  minlength="3"
-                />
-                <input
-                  class="section-form__input section-form__input--last-name"
-                  type="text"
-                  placeholder="Last Name"
-                  pattern="[A-Za-z]{1,32}"
-                  required
-                  title="The username must consist of letters without numbers."
-                  minlength="3"
-                />
-              </div>
-              <input
-                class="section-form__input section-form__input--email"
-                type="text"
-                placeholder="Email"
-                required
-                minlength="3"
-              />
-              <input
-                class="section-form__input section-form__input--company-name"
-                type="text"
-                placeholder="Company name (optional)"
-              />
-              <input
-                class="section-form__input section-form__input--enqiry"
-                type="text"
-                placeholder="Enqiry"
-              />
-              <input
-                type="checkbox"
-                class="section-form__input section-form__input--сheckbox"
-                name="policy"
-                id="policy"
-              />
-              <label for="policy" class="section-form__policy">
-                <span class="checkbox"
-                  >I agree to the
-                  <a href="#" class="checkbox__terms">Terms of Use </a>and
-                  <a href="#" class="checkbox__terms">Privacy Policy</a></span
-                >
-              </label>
-              <button type="submit" class="section-form__button">Send</button>
-              <img
-                class="section-form__button-close"
-                src="./images/close-btn.png"
-                alt=""
-              />
-            </div>
-          </form>
-        </div>
-      </section> -->
     </main>
     <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/index.js"></script>

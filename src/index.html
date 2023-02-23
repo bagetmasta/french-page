@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body data-body>
     <header>
@@ -49,19 +53,27 @@
                 <a class="nav__item__link" href="#">Nos activités</a>
                 <ul class="nav__list--activites">
                   <li class="nav__list--item-activites">
-                    <a href="#">Ressourceries</a>
+                    <a class="nav__list--item-link" href="#">Ressourceries</a>
                   </li>
                   <li class="nav__list--item-activites">
-                    <a href="#">Borne de collecte</a>
+                    <a class="nav__list--item-link" href="#"
+                      >Borne de collecte</a
+                    >
                   </li>
                   <li class="nav__list--item-activites">
-                    <a href="#">Valorisation textile</a>
+                    <a class="nav__list--item-link" href="#"
+                      >Valorisation textile</a
+                    >
                   </li>
                   <li class="nav__list--item-activites">
-                    <a href="#">Nos BOUTIKS</a>
+                    <a
+                      class="nav__list--item-link nav__list--item-link-boutiks"
+                      href="#"
+                      >Nos BOUTIKS</a
+                    >
                   </li>
                   <li class="nav__list--item-activites">
-                    <a href="#">Nos formations</a>
+                    <a class="nav__list--item-link" href="#">Nos formations</a>
                   </li>
                 </ul>
               </li>
@@ -81,63 +93,210 @@
     </header>
 
     <main>
-      <section class="testimonials">
-        <h1>Testimonials</h1>
-        <p>Excepteur sint occaecat cupidatat non proident</p>
-        <ul>
-          <li>
-            <p>
-              Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum
-              nulla sed consectetur.
-            </p>
-            <h2>Dianne Russell</h2>
-            <p>Marketing Coordinator</p>
-          </li>
-          <li>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium.
-            </p>
-            <h2>Robert Johnson</h2>
-            <p>Graphic Designer</p>
-          </li>
-          <li>
-            <p>
-              Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
-              risus, porta ac consectetur ac, vestibulum at eros.
-            </p>
-            <h2>Floyd Miles</h2>
-            <p>President of Sales</p>
-          </li>
-        </ul>
+      <section class="testimonials container">
+        <h1 class="testimonials__main-header">Testimonials</h1>
+        <p class="testimonials__secondary-header">
+          Excepteur sint occaecat cupidatat non proident
+        </p>
+        <div class="swiper">
+          <ul class="swiper-wrapper">
+            <li class="testimonials__item swiper-slide">
+              <p class="testimonials__text">
+                Nulla vitae elit libero, a pharetra augue. Aenean lacinia
+                bibendum nulla sed consectetur.
+              </p>
+              <div class="testimonials__main-employee-wrapper">
+                <img
+                  class="testimonials__photo"
+                  src="./images/avatar1.svg"
+                  alt="employee photo"
+                />
+                <div class="testimonials__secondary-employee-wrapper">
+                  <h2 class="testimonials__name">Dianne Russell</h2>
+                  <p class="testimonials__job-title">Marketing Coordinator</p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials__item swiper-slide">
+              <p class="testimonials__text">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium.
+              </p>
+              <div class="testimonials__main-employee-wrapper">
+                <img
+                  class="testimonials__photo"
+                  src="./images/avatar2.svg"
+                  alt="employee photo"
+                />
+                <div class="testimonials__secondary-employee-wrapper">
+                  <h2 class="testimonials__name">Robert Johnson</h2>
+                  <p class="testimonials__job-title">Graphic Designer</p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials__item swiper-slide">
+              <p class="testimonials__text">
+                Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
+                risus, porta ac consectetur ac, vestibulum at eros.
+              </p>
+              <div class="testimonials__main-employee-wrapper">
+                <img
+                  class="testimonials__photo"
+                  src="./images/avatar3.svg"
+                  alt="employee photo"
+                />
+                <div class="testimonials__secondary-employee-wrapper">
+                  <h2 class="testimonials__name">Floyd Miles</h2>
+                  <p class="testimonials__job-title">President of Sales</p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials__item swiper-slide">
+              <p class="testimonials__text">
+                Nulla vitae elit libero, a pharetra augue. Aenean lacinia
+                bibendum nulla sed consectetur.
+              </p>
+              <div class="testimonials__main-employee-wrapper">
+                <img
+                  class="testimonials__photo"
+                  src="./images/avatar1.svg"
+                  alt="employee photo"
+                />
+                <div class="testimonials__secondary-employee-wrapper">
+                  <h2 class="testimonials__name">Dianne Russell</h2>
+                  <p class="testimonials__job-title">Marketing Coordinator</p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials__item swiper-slide">
+              <p class="testimonials__text">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium.
+              </p>
+              <div class="testimonials__main-employee-wrapper">
+                <img
+                  class="testimonials__photo"
+                  src="./images/avatar2.svg"
+                  alt="employee photo"
+                />
+                <div class="testimonials__secondary-employee-wrapper">
+                  <h2 class="testimonials__name">Robert Johnson</h2>
+                  <p class="testimonials__job-title">Graphic Designer</p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials__item swiper-slide">
+              <p class="testimonials__text">
+                Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
+                risus, porta ac consectetur ac, vestibulum at eros.
+              </p>
+              <div class="testimonials__main-employee-wrapper">
+                <img
+                  class="testimonials__photo"
+                  src="./images/avatar3.svg"
+                  alt="employee photo"
+                />
+                <div class="testimonials__secondary-employee-wrapper">
+                  <h2 class="testimonials__name">Floyd Miles</h2>
+                  <p class="testimonials__job-title">President of Sales</p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials__item swiper-slide">
+              <p class="testimonials__text">
+                Nulla vitae elit libero, a pharetra augue. Aenean lacinia
+                bibendum nulla sed consectetur.
+              </p>
+              <div class="testimonials__main-employee-wrapper">
+                <img
+                  class="testimonials__photo"
+                  src="./images/avatar1.svg"
+                  alt="employee photo"
+                />
+                <div class="testimonials__secondary-employee-wrapper">
+                  <h2 class="testimonials__name">Dianne Russell</h2>
+                  <p class="testimonials__job-title">Marketing Coordinator</p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials__item swiper-slide">
+              <p class="testimonials__text">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium.
+              </p>
+              <div class="testimonials__main-employee-wrapper">
+                <img
+                  class="testimonials__photo"
+                  src="./images/avatar2.svg"
+                  alt="employee photo"
+                />
+                <div class="testimonials__secondary-employee-wrapper">
+                  <h2 class="testimonials__name">Robert Johnson</h2>
+                  <p class="testimonials__job-title">Graphic Designer</p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials__item swiper-slide">
+              <p class="testimonials__text">
+                Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
+                risus, porta ac consectetur ac, vestibulum at eros.
+              </p>
+              <div class="testimonials__main-employee-wrapper">
+                <img
+                  class="testimonials__photo"
+                  src="./images/avatar3.svg"
+                  alt="employee photo"
+                />
+                <div class="testimonials__secondary-employee-wrapper">
+                  <h2 class="testimonials__name">Floyd Miles</h2>
+                  <p class="testimonials__job-title">President of Sales</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-pagination"></div>
       </section>
 
-      <section class="faq">
-        <h3>Frequently Asked Question</h3>
-        <p>Excepteur sint occaecat cupidatat non proident</p>
-        <ul>
-          <li>
-            <h4>Sed ut perspiciatis unde omnis iste natus ?</h4>
-            <p>
+      <section class="faq container">
+        <h3 class="faq__main-header">Frequently Asked Question</h3>
+        <p class="faq__description">
+          Excepteur sint occaecat cupidatat non proident
+        </p>
+        <ul class="faq__list">
+          <li class="faq__item">
+            <h4 class="faq__secondary-header">
+              Sed ut perspiciatis unde omnis iste natus ?
+            </h4>
+            <p class="faq__item-text">
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium voluptatum deleniti atque.
             </p>
           </li>
-          <li>
-            <h4>Sed ut perspiciatis unde omnis iste natus ?</h4>
-            <p>
+          <li class="faq__item">
+            <h4 class="faq__secondary-header">
+              Temporibus autem quibusdam et aut ?
+            </h4>
+            <p class="faq__item-text">
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium voluptatum deleniti atque.
             </p>
           </li>
-          <li>
-            <h4>Sed ut perspiciatis unde omnis iste natus ?</h4>
-            <p>
+          <li class="faq__item">
+            <h4 class="faq__secondary-header">
+              Sed ut perspiciatis unde omnis iste natus ?
+            </h4>
+            <p class="faq__item-text">
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium voluptatum deleniti atque.
             </p>
           </li>
         </ul>
+        <img
+          class="developer-photo"
+          src="./images/developer.jpg"
+          alt="developer photo"
+        />
       </section>
 
       <section class="call-to-action">
@@ -228,5 +387,6 @@
     </main>
     <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>

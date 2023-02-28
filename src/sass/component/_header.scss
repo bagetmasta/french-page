@@ -34,8 +34,6 @@ header {
 
   color: #e75624;
 
-  transition: color $transition-duration $timing-function;
-
   @media screen and (max-width: 1023.98px) {
     font-size: 20px;
     line-height: 1.25;
@@ -54,6 +52,7 @@ header {
 
 .nav__item:hover,
 .nav__item:focus {
+  transition: color $transition-duration $timing-function;
   color: #a8360ff0;
 }
 
@@ -127,13 +126,17 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.22;
-
+  cursor: pointer;
   color: #252525;
   display: none;
 }
 
 .nav__list--item-activites:hover,
 .nav__list--item-activites:focus {
+  transition-property: background-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
+
   text-decoration: underline;
 
   @media screen and (min-width: 1024px) {

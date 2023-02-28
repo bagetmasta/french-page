@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="./sass/index.scss" />
     <link
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.css"
       rel="stylesheet"
     />
   </head>
@@ -118,7 +118,7 @@
               </div>
             </li>
             <li class="testimonials__item swiper-slide">
-              <p class="testimonials__text">
+              <p class="testimonials__text testimonials__text--robert-jonson">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium.
               </p>
@@ -135,7 +135,7 @@
               </div>
             </li>
             <li class="testimonials__item swiper-slide">
-              <p class="testimonials__text">
+              <p class="testimonials__text testimonials__text--floyd-miles">
                 Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
                 risus, porta ac consectetur ac, vestibulum at eros.
               </p>
@@ -169,7 +169,7 @@
               </div>
             </li>
             <li class="testimonials__item swiper-slide">
-              <p class="testimonials__text">
+              <p class="testimonials__text testimonials__text--robert-jonson">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium.
               </p>
@@ -186,7 +186,7 @@
               </div>
             </li>
             <li class="testimonials__item swiper-slide">
-              <p class="testimonials__text">
+              <p class="testimonials__text testimonials__text--floyd-miles">
                 Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
                 risus, porta ac consectetur ac, vestibulum at eros.
               </p>
@@ -220,7 +220,7 @@
               </div>
             </li>
             <li class="testimonials__item swiper-slide">
-              <p class="testimonials__text">
+              <p class="testimonials__text testimonials__text--robert-jonson">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium.
               </p>
@@ -237,7 +237,7 @@
               </div>
             </li>
             <li class="testimonials__item swiper-slide">
-              <p class="testimonials__text">
+              <p class="testimonials__text testimonials__text--floyd-miles">
                 Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
                 risus, porta ac consectetur ac, vestibulum at eros.
               </p>
@@ -254,44 +254,52 @@
               </div>
             </li>
           </ul>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
       </section>
 
       <section class="faq container">
-        <h3 class="faq__main-header">Frequently Asked Question</h3>
-        <p class="faq__description">
-          Excepteur sint occaecat cupidatat non proident
-        </p>
-        <ul class="faq__list">
-          <li class="faq__item">
-            <h4 class="faq__secondary-header">
-              Sed ut perspiciatis unde omnis iste natus ?
-            </h4>
-            <p class="faq__item-text">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum deleniti atque.
-            </p>
-          </li>
-          <li class="faq__item">
-            <h4 class="faq__secondary-header">
-              Temporibus autem quibusdam et aut ?
-            </h4>
-            <p class="faq__item-text">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum deleniti atque.
-            </p>
-          </li>
-          <li class="faq__item">
-            <h4 class="faq__secondary-header">
-              Sed ut perspiciatis unde omnis iste natus ?
-            </h4>
-            <p class="faq__item-text">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum deleniti atque.
-            </p>
-          </li>
-        </ul>
+        <div class="faq__wrapper">
+          <h3 class="faq__main-header">Frequently Asked Question</h3>
+          <p class="faq__description">
+            Excepteur sint occaecat cupidatat non proident
+          </p>
+          <ul class="faq__list">
+            <div class="faq__list-box">
+              <li class="faq__item">
+                <h4 class="faq__secondary-header">
+                  Sed ut perspiciatis unde omnis iste natus ?
+                </h4>
+                <p class="faq__item-text">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque.
+                </p>
+              </li>
+            </div>
+            <div class="faq__list-box">
+              <li class="faq__item">
+                <h4 class="faq__secondary-header">
+                  Temporibus autem quibusdam et aut ?
+                </h4>
+                <p class="faq__item-text">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque.
+                </p>
+              </li>
+            </div>
+            <div class="faq__list-box">
+              <li class="faq__item">
+                <h4 class="faq__secondary-header">
+                  Sed ut perspiciatis unde omnis iste natus ?
+                </h4>
+                <p class="faq__item-text">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque.
+                </p>
+              </li>
+            </div>
+          </ul>
+        </div>
         <img
           class="developer-photo"
           src="./images/developer.jpg"
@@ -385,8 +393,8 @@
         </div>
       </section>
     </main>
-    <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.js"></script>
   </body>
 </html>

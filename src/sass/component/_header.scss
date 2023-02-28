@@ -126,7 +126,6 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.22;
-  cursor: pointer;
   color: #252525;
   display: none;
 }
@@ -136,8 +135,6 @@ header {
   transition-property: background-color;
   transition-duration: $transition-duration;
   transition-timing-function: $timing-function;
-
-  text-decoration: underline;
 
   @media screen and (min-width: 1024px) {
     text-decoration: none;
@@ -188,6 +185,13 @@ header {
     bottom: -1px;
     width: 140px;
     background-color: #e75624;
+  }
+}
+
+.nav__list--item-link:hover,
+.nav__list--item-link:focus {
+  @media screen and(max-width: 1023.98px) {
+    text-decoration: underline;
   }
 }
 

@@ -1,7 +1,7 @@
 .testimonials {
   font-family: 'Poppins';
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 38px;
   max-width: 1216px;
 
   @media screen and (min-width: 1024px) {
@@ -118,11 +118,7 @@
 }
 
 .swiper {
-  height: 222px;
-
-  @media screen and(min-width: 467px) and(max-width: 767px) {
-    height: 242px;
-  }
+  height: 242px;
 
   @media screen and(min-width:1024px) {
     height: 300px;
@@ -134,5 +130,38 @@
 }
 
 .swiper-wrapper {
-  height: auto;
+  height: auto !important;
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+}
+
+.swiper-pagination-bullet-active {
+  background: linear-gradient(90deg, #ff6800 0%, #ff1f00 100%) !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.swiper-pagination-bullet:not(:first-child) {
+  margin-left: 10px !important;
+
+  @media screen and(min-width: 1440px) {
+    margin-left: 20px !important;
+  }
+}
+
+.ul-test {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  display: flex;
+  flex-direction: column;
 }

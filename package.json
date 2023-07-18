@@ -2,10 +2,9 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://bagetmasta.github.io/french-page",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /french-page/"
+    "build": "parcel build src/*.html --public-url /"
   },
   "repository": {
     "type": "git",
@@ -22,7 +21,9 @@
     "swiper": "^9.0.5"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.6.0",
     "@parcel/transformer-sass": "^2.6.0",
+    "@parcel/transformer-webmanifest": "^2.6.0",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
